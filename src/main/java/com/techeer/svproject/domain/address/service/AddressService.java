@@ -14,6 +14,6 @@ public class AddressService {
 
     // User Address 생성
     public UUID createAddress(AddressCreateDto addressCreateDto) {
-        return addressRepository.save(addressCreateDto.toEntity()).getAddress_id();
+        return addressRepository.save(addressCreateDto.toEntity()).getAddressId();
     }
 }
